@@ -9,10 +9,27 @@ function calc() {
     var transn2 = Number(document.getElementById("n2trans").value)
     var provan2 = Number(document.getElementById("n2prova").value)
 
-    n1 = (parc1n1 + parc2n1 + intern1 + provan1) / 2
-    n2 = (parc1n2 + parc2n2 + transn2 + provan2) / 2
-
-    mf = (n1 + n2) / 2
+    // n1 = (parc1n1 + parc2n1 + intern1 + provan1) / 2
+    // n2 = (parc1n2 + parc2n2 + transn2 + provan2) / 2
+    // mf = (n1 + n2) / 2
+    
+    mf = (parc1n1 + parc2n1 + intern1 + provan1 + parc1n2 + parc2n2 + transn2 + provan2) / 4
 
     document.getElementById("res").innerHTML="Sua média final é: " + mf
+
+    var image = document.getElementById("situacao")
+
+    if (mf < 4) {
+        // REPROVADO
+        document.getElementById("sit").innerHTML="<b>REPROVADO</b>"
+        image.src="/images/reprovado.jpg"
+    } else if (mf >= 4 && mf < 5){
+        // RECUPERACAO
+        document.getElementById("sit").innerHTML="<b>RECUPERAÇÃO</b>"
+        image.src="/images/recuperacao.jpg"
+    } else {
+        // APROVADO
+        document.getElementById("sit").innerHTML="<b>APROVADO</b>"
+        image.src="/images/aprovado.jpg"
+    }
 }
