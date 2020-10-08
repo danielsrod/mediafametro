@@ -16,6 +16,10 @@ body {
     box-shadow: 1px 1px rgb(92, 92, 92);
 }
 
+label {
+    margin-left: 15px;
+}
+
 .desc {
     margin-right: 222px;
 }
@@ -23,6 +27,7 @@ body {
 .notas {
     margin-left: 15px;
     width: 66px;
+    background-color: rgb(222, 222, 222);
 }
 .labels {
     text-align: left;
@@ -36,8 +41,20 @@ body {
 
 #button {
     margin-bottom: 20px;
+    background-color: #0300bb;
+    color: white;
 }
 
-#button:focus {
-    
+#button:hover {
+    transition: 350ms;
+    background-color: #9997ee;
+}
+
+input {
+    border: 0px;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
 }

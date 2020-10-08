@@ -1,18 +1,18 @@
 function calc() {
-    var n1parc1 = Number(document.getElementById("n1parc1").value)
-    var n1parc2 = Number(document.getElementById("n1parc2").value)
-    var n1inter = Number(document.getElementById("n1inter").value)
-    var n1prova = Number(document.getElementById("n1prova").value)
+    var parc1n1 = Number(document.getElementById("n1parc1").value)
+    var parc2n1 = Number(document.getElementById("n1parc2").value)
+    var intern1 = Number(document.getElementById("n1inter").value)
+    var provan1 = Number(document.getElementById("n1prova").value)
 
-    var n2parc1 = Number(document.getElementById("n2parc1").value)
-    var n2parc2 = Number(document.getElementById("n2parc2").value)
-    var n2inter = Number(document.getElementById("n2inter").value)
-    var n2prova = Number(document.getElementById("n2prova").value)
+    var parc1n2 = Number(document.getElementById("n2parc1").value)
+    var parc2n2 = Number(document.getElementById("n2parc2").value)
+    var transn2 = Number(document.getElementById("n2trans").value)
+    var provan2 = Number(document.getElementById("n2prova").value)
 
-    var n1 = (n1parc1 + n1parc2 + n1inter + n1prova) / 2
-    var n2 = (n2parc1 + n2parc2 + n2trans + n2prova) / 2
+    n1 = (parc1n1 + parc2n1 + intern1 + provan1) / 2
+    n2 = (parc1n2 + parc2n2 + transn2 + provan2) / 2
 
-    var mf = (n1 + n2) / 2
+    mf = (n1 + n2) / 2
 
-    document.getElementById("res").innerHTML=mf
+    document.getElementById("res").innerHTML="Sua média final é: " + mf
 }
