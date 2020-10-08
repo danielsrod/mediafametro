@@ -14,7 +14,30 @@
                 <h1 id="title">Calculadora de notas FAMETRO</h1>
             </header>
             <img src="images/fametro-logo.png" alt="Logotipo da FAMETRO" id="fametrologo">
-            
+            <section>
+                <section id="n1">
+                    <h2 class="desc">N1</h2>
+                    <label for="parc1" class="labels">Parcial 1</label><input type="number" name="n1parc1" id="n1parc1" placeholder="Ex.: 4.7" class="notas"> <br>
+                    <label for="parc2" class="labels">Parcial 2</label><input type="number" name="n1parc2" id="n1parc2" class="notas"> <br>
+                    <label for="inter" class="labels">Interdisciplinar</label><input type="number" name="n1inter" id="n1inter" class="notas"> <br>
+                    <label for="prova" class="labels" id="labelprova">Prova</label><input type="number" name="n1prova" id="n1prova" class="notas">
+                    <hr class="hrs">
+                </section>
+                <section id="n2">
+                    <h2 class="desc">N2</h2>
+                    <label for="parc1" class="labels">Parcial 1</label><input type="number" name="n2parc1" id="n2parc1" placeholder="Ex.: 4.7" class="notas"> <br>
+                    <label for="parc2" class="labels">Parcial 2</label><input type="number" name="n2parc2" id="n2parc2" class="notas"> <br>
+                    <label for="trans" class="labels">Transversal</label><input type="number" name="n2trans" id="n2trans" class="notas"> <br>
+                    <label for="prova" class="labels">Prova</label><input type="number" name="n2prova" id="n2prova" class="notas"> <br>
+                    <hr class="hrs">
+                </section>
+                <section>
+                    <h2 class="desc">Situação</h2>
+                    <input type="button" value="Calcular" onClick="calc()" id="button"> <br>
+                    <p id="res">Sua nota é: </p> <br>
+                    <img src="images/questionmark.jpg" alt="Foto de uma interrogação">
+                </section>
+            </section>
         </section>
     </div>
 </body>

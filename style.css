@@ -13,4 +13,31 @@ body {
     text-align: center;
     border-radius: 12px;
     padding: 3px;
+    box-shadow: 1px 1px rgb(92, 92, 92);
+}
+
+.desc {
+    margin-right: 222px;
+}
+
+.notas {
+    margin-left: 15px;
+    width: 66px;
+}
+.labels {
+    text-align: left;
+}
+
+.hrs {
+    background-color: #0300bb;
+    width: 300px;
+    height: .1px;
+}
+
+#button {
+    margin-bottom: 20px;
+}
+
+#button:focus {
+    
 }
